@@ -21,6 +21,7 @@ class HomeScreen extends StatelessWidget {
           ]
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndFloat,
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add_reaction_sharp),
         onPressed: () => print('hola'),
