@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
+  static const TextStyle textStyle = TextStyle( fontSize: 30);
 
   @override
   Widget build(BuildContext context) {
@@ -14,11 +15,15 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text('Click Counter'),
-            Text('Craft beautiful UIs'),
+          children: const <Widget> [
+            Text('Click Counter', style: textStyle),
+            Text('Craft beautiful UIs', style: textStyle),
           ]
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add_reaction_sharp),
+        onPressed: () => print('hola'),
       ),
     );
   }
